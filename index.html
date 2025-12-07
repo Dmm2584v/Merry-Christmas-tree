@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Luxury Christmas Tree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background-color: #020617; /* Slate 950 */
+        font-family: 'Lato', sans-serif;
+        overflow: hidden;
+      }
+      h1, h2, h3, .luxury-font {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+    <!-- Import Map for Dependencies -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.1",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+        "react/": "https://aistudiocdn.com/react@^19.2.1/",
+        "three": "https://aistudiocdn.com/three@^0.181.2",
+        "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+        "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+        "@react-three/postprocessing": "https://aistudiocdn.com/@react-three/postprocessing@^3.0.4",
+        "postprocessing": "https://aistudiocdn.com/postprocessing@^6.38.0",
+        "uuid": "https://aistudiocdn.com/uuid@^9.0.1"
+      }
+    }
+    </script>
+    <!-- Babel Standalone for in-browser JSX/TS compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Entry Point: Note the 'text/babel' type and data-type='module' -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
